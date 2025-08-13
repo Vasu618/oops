@@ -7,7 +7,7 @@ public class meterstofeet {
         System.out.print("enter the distance in meters: ");
         double meters = input.nextDouble();
 
-        // Conversion
+        
         double feet = meters * 3.28084;
 
         System.out.println(meters + " meters = " + feet + " feet");
