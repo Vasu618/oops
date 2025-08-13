@@ -1,19 +1,19 @@
 import java.util.Scanner; 
 
-public class SimpleCalculator {
+public class calc {
     public static void main(String[] args) {
         
   
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the first number: ");
+        System.out.print("enter the first number: ");
         double num1 = scanner.nextDouble(); 
 
   
-        System.out.print("Enter an operator (+, -, *, /): ");
+        System.out.print("enter an operator (+, -, *, /): ");
         char operator = scanner.next().charAt(0); 
 
-        System.out.print("Enter the second number: ");
+        System.out.print("enter the second number ");
         double num2 = scanner.nextDouble(); 
 
         double result;
@@ -35,12 +35,12 @@ public class SimpleCalculator {
                 break;
 
             case '/':
-                // Check if the user is dividing by zero
+                
                 if (num2 != 0) {
                     result = num1 / num2;
                     System.out.println("Result: " + result); 
                 } else {
-                    System.out.println("Error: Cannot divide by zero!");  division by zero
+                    System.out.println("Cannot divide by zero!");  division by zero
                 }
                 break;
 
@@ -48,8 +48,6 @@ public class SimpleCalculator {
                 System.out.println("Invalid operator! Please use +, -, *, or /.");
                 break;
         }
-
-        // Close the scanner
         scanner.close();
     }
 }
